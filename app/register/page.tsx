@@ -33,7 +33,7 @@ export default function Register() {
           <img alt="Logo" src="/images/logo-header-sekitar.png" className="h-[44px] md:h-[54px] lg:h-[54px] w-auto text-blue-400"/>
         </div>
 
-        <h2 className="mt-6 text-[32px] font-semibold text-gray-900">
+        <h2 className="mt-6 text-[20px] md:text-[32px] lg:text-[32px] font-semibold text-gray-900">
           Daftar ke Sekitar
         </h2>
         <p className="mt-2 text-xs text-gray-600">
