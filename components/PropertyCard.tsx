@@ -1,18 +1,21 @@
 import React from 'react';
 import { Property } from '../types';
 import { MapPin, Bed } from 'lucide-react';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 interface PropertyCardProps {
   property: Property;
 }
 
-const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
+const PropertyCard: React.FC<PropertyCardProps> = ({ property, className = ""}) => {
   return (
-    <div className="relative rounded-xl overflow-hidden bg-white shadow-md">
+    <div className={`relative rounded-xl overflow-hidden bg-white shadow-md ${className}`}>
         {/* IMAGE */}
+        
         <div className="relative h-[360px] w-full">
           <img
-            src={property.image}
+            src={property.image || <Skeleton />}
             alt={property.title}
             className="h-full w-full object-cover"
           />
@@ -20,14 +23,14 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           {/* BADGE */}
           <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-md md:rounded-xl lg:rounded-xl flex items-center gap-2 shadow-sm">
             <Bed size={18} className="text-gray-700" />
-            <span className="font-semibold text-gray-900 text-[12px] md:text-[12px] lg:text-[12px]">Kost {property.type}</span>
+            <span className="font-semibold text-gray-900 text-[12px] md:text-[12px] lg:text-[12px]">Kost {property.type || <Skeleton />}</span>
           </div>
         </div>
 
         {/* FLOATING WHITE CARD */}
         <div className="absolute left-1/2 -translate-x-1/2 bottom-4 w-[90%] bg-white rounded-lg md:rounded-xl lg:rounded-xl shadow-lg p-2">
           <h3 className="text-[14px] lg:text-[16px] md:text-[16px] font-semibold text-gray-900">
-            {property.title}
+            {property.title || <Skeleton/>}
           </h3>
 
           {/* LOCATION */}

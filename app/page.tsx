@@ -256,10 +256,18 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {[...PROPERTIES, ...PROPERTIES].slice(0, 10).map((prop, idx) => (
-            <PropertyCard key={`${prop.id}-${idx}`} property={prop} />
-          ))}
-        </div>
+  {[...PROPERTIES, ...PROPERTIES].slice(0, 10).map((prop, idx) => {
+    const isBlur = idx >= 5; // last 5 items
+    return (
+      <PropertyCard
+        key={`${prop.id}-${idx}`}
+        property={prop}
+        className={isBlur ? "blur-md" : ""}
+      />
+    );
+  })}
+</div>
+
 
         <div className="flex justify-center items-center gap-4 mt-12 text-sm font-medium">
            <button className="text-gray-400 flex items-center gap-1 hover:text-gray-900"><ArrowLeft size={16}/> Previous</button>
