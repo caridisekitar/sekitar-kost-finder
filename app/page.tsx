@@ -83,7 +83,7 @@ export default function Home() {
     }
     testimonialIntervalRef.current = window.setInterval(() => {
       setCurrentTestimonialIndex(prev => (prev + 1) % TESTIMONIALS.length);
-    }, 5000000); // Slide every 5 seconds
+    }, 5000); // Slide every 5 seconds
   };
 
   const handleNextTestimonial = () => {
