@@ -11,7 +11,7 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => 
   const location = useLocation();
   const isNotFound = children?.type === NotFound;
 
-  const hideHeaderFooter = ['/login', '/register'].includes(location.pathname) || isNotFound;
+  const hideHeaderFooter = ['/login', '/register', '/confirm-otp'].includes(location.pathname) || isNotFound;
 
   return (
     <div className="flex flex-col min-h-screen bg-white">

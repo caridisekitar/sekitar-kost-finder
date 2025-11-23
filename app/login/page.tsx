@@ -12,7 +12,7 @@ export default function Login() {
     e.preventDefault();
     // Mock login logic
     console.log('Logging in with:', phone);
-    navigate('/profile');
+    navigate('/confirm-otp');
   };
 
   return (

@@ -5,6 +5,7 @@ import Home from './app/page';
 import Login from './app/login/page';
 import Register from './app/register/page';
 import Profile from './app/profile/page';
+import ConfirmOTP from './app/confirm-otp/page';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/search" element={<Home />} />
           <Route path="/maps" element={<Home />} />
           <Route path="/wishlist" element={<Profile />} />
+          <Route path="/confirm-otp" element={<ConfirmOTP />} />
         </Routes>
       </ClientLayout>
     </Router>

@@ -14,7 +14,7 @@ export default function Register() {
     e.preventDefault();
     // Mock register logic
     console.log('Registering:', name, email, phone);
-    navigate('/profile');
+    navigate('/confirm-otp');
   };
 
   return (

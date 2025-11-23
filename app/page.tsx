@@ -270,7 +270,7 @@ export default function Home() {
 
 
         <div className="flex justify-center items-center gap-4 mt-12 text-sm font-medium">
-           <button className="text-gray-400 flex items-center gap-1 hover:text-gray-900"><ArrowLeft size={16}/> Previous</button>
+        {/*    <button className="text-gray-400 flex items-center gap-1 hover:text-gray-900"><ArrowLeft size={16}/> Previous</button>
            <button className="w-8 h-8 bg-gray-900 text-white rounded flex items-center justify-center">1</button>
            <button className="w-8 h-8 text-gray-500 hover:bg-gray-100 rounded flex items-center justify-center">2</button>
            <button className="w-8 h-8 text-gray-500 hover:bg-gray-100 rounded flex items-center justify-center">3</button>
@@ -278,7 +278,10 @@ export default function Home() {
            <button className="w-8 h-8 text-gray-500 hover:bg-gray-100 rounded flex items-center justify-center">67</button>
            <button className="w-8 h-8 text-gray-500 hover:bg-gray-100 rounded flex items-center justify-center">68</button>
            <button className="text-gray-900 flex items-center gap-1 hover:text-blue-600">Next <ArrowRight size={16}/></button>
-        </div>
+           */}
+           <button className="px-8 py-3 border border-[#18181B] rounded-xl text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors">Lihat semua</button>
+        </div> 
+        
       </section>
 
       {/* Promo Section */}
