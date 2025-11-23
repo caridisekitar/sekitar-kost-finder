@@ -280,7 +280,7 @@ export default function Home() {
           <div className="bg-[#89CFF0] rounded-3xl p-8 md:p-10 flex flex-row items-center relative overflow-hidden h-[300px]">
              <div className="absolute left-0 bottom-0 w-1/2 h-full">
                 <img src="/images/bisnis-kost.webp" className="w-full h-full object-cover object-center" alt="User" />
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#89CFF0]"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#89CFF0]"></div>
              </div>
              <div className="absolute right-0 w-1/2 z-10">
                <div className="inline-block bg-white px-3 py-1 rounded-xl text-xs font-bold mb-4">Gratis</div>
@@ -293,7 +293,7 @@ export default function Home() {
            <div className="bg-[#89CFF0] rounded-3xl p-8 md:p-10 flex flex-row items-center relative overflow-hidden h-[300px]">
               <div className="absolute left-0 bottom-0 w-1/2 h-full">
                 <img src="/images/daftarkan-bisnis.webp" className="w-full h-full object-cover object-center" alt="Business owner" />
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#89CFF0]"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#89CFF0]"></div>
              </div>
              <div className="absolute right-0 w-1/2 z-10">
                <div className="inline-block bg-white px-3 py-1 rounded-xl text-xs font-bold mb-4">Gratis</div>

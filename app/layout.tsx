@@ -48,7 +48,6 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        <script src="https://cdn.tailwindcss.com"></script>
         <style>{`
           /* Hide scrollbar for chrome/safari/opera */
           .no-scrollbar::-webkit-scrollbar {

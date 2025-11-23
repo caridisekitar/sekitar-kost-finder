@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import NotFound from "@/app/NotFound";
+import "@/app/globals.css";
 
 const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
