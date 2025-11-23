@@ -98,3 +98,5 @@ export const TESTIMONIALS: Testimonial[] = [
     image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   }
 ];
+
+export const isSubscribed = false;

@@ -10,7 +10,7 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ property}) => {
   return (
-    <div className={`relative rounded-xl overflow-hidden bg-white shadow-md `}>
+    <div className={`relative rounded-xl overflow-hidden bg-white shadow-md blur-md`}>
         {/* IMAGE */}
         
         <div className="relative h-[360px] w-full">

@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { ArrowRight, ArrowLeft, Search, Sparkles, Home as HomeIcon, ChevronDown, ChevronRight } from 'lucide-react';
 import { PROPERTIES, BUSINESSES, TESTIMONIALS } from '../constants';
 import PropertyCard from '../components/PropertyCard';
+import PropertyCardBlur from '../components/PropertyCardBlur';
 import SearchFilter from '../components/SearchFilter';
 
 export default function Home() {
@@ -256,17 +257,27 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-  {[...PROPERTIES, ...PROPERTIES].slice(0, 10).map((prop, idx) => {
-    const isBlur = idx >= 5; // last 5 items
-    return (
-      <PropertyCard
-        key={`${prop.id}-${idx}`}
-        property={prop}
-        className={isBlur ? "blur-md" : ""}
-      />
-    );
-  })}
-</div>
+            {[...PROPERTIES, ...PROPERTIES].slice(0, 10).map((prop, idx) => {
+              
+              // If index >= 5 → render PropertyCardBlur
+              if (idx >= 5) {
+                return (
+                  <PropertyCardBlur 
+                    key={`${prop.id}-${idx}`} 
+                    property={prop} 
+                  />
+                );
+              }
+
+              // Otherwise → normal card
+              return (
+                <PropertyCard
+                  key={`${prop.id}-${idx}`}
+                  property={prop}
+                />
+              );
+            })}
+          </div>
 
 
         <div className="flex justify-center items-center gap-4 mt-12 text-sm font-medium">
