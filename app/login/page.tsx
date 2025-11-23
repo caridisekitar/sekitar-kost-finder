@@ -20,7 +20,7 @@ export default function Login() {
 
   {/* LEFT: LOGIN FORM */}
   <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-xl w-full space-y-8 p-8">
+    <div className="max-w-xl w-full space-y-8 p-4 md:p-8 lg:p-8">
 
       <div className="">
         <div className="flex cursor-pointer" onClick={() => navigate('/')}>
