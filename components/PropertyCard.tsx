@@ -18,15 +18,15 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           />
 
           {/* BADGE */}
-          <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-xl flex items-center gap-2 shadow-sm">
+          <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-md md:rounded-xl lg:rounded-xl flex items-center gap-2 shadow-sm">
             <Bed size={18} className="text-gray-700" />
-            <span className="font-semibold text-gray-900 text-[14px]">Kost {property.type}</span>
+            <span className="font-semibold text-gray-900 text-[12px] md:text-[12px] lg:text-[12px]">Kost {property.type}</span>
           </div>
         </div>
 
         {/* FLOATING WHITE CARD */}
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-4 w-[90%] bg-white rounded-xl shadow-lg p-2">
-          <h3 className="text-[16px] lg:text-[16px] md:text-[16px] font-semibold text-gray-900">
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-4 w-[90%] bg-white rounded-lg md:rounded-xl lg:rounded-xl shadow-lg p-2">
+          <h3 className="text-[14px] lg:text-[16px] md:text-[16px] font-semibold text-gray-900">
             {property.title}
           </h3>
 
@@ -37,7 +37,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           </div>
 
           {/* PRICE */}
-          <div className="bg-[#EAF6FF] rounded-xl py-3 text-center">
+          <div className="bg-[#EAF6FF] rounded-lg md:rounded-xl lg:rounded-xl py-3 text-center">
             <span className="text-[16px] lg:text-[16px] md:text-[16px] font-bold text-gray-900">
               {property.price}
             </span>

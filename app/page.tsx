@@ -118,10 +118,10 @@ export default function Home() {
         </div>
         
         <div className="max-w-5xl mx-auto text-center z-10 relative w-full mt-12 md:mt-0 lg:mt-0">
-          <h1 className="text-xl md:text-[64px] lg:text-[64px] leading-[30px] md:leading-[76px] lg:leading-[76px] tracking-[-0.8px] text-white drop-shadow-sm">
+          <h1 className="text-2xl md:text-[64px] lg:text-[64px] leading-[30px] md:leading-[76px] lg:leading-[76px] tracking-[-0.8px] text-white drop-shadow-sm">
             Cari kost terasa lebih mudah,
           </h1>
-          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mt-0 md:mt-2 lg:mt-2 text-xl md:text-[64px] lg:text-[64px] leading-[30px] md:leading-[76px] lg:leading-[76px] tracking-[-0.8px] text-white drop-shadow-sm">
+          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mt-0 md:mt-2 lg:mt-2 text-2xl md:text-[64px] lg:text-[64px] leading-[30px] md:leading-[76px] lg:leading-[76px] tracking-[-0.8px] text-white drop-shadow-sm">
             <span>bersama</span>
             <div className="flex items-end justify-center">
                <img alt="Logo" src="/images/logo-sekitar-icon.png" className="h-10 w-auto md:h-[72px] md:w-auto"/>
@@ -153,7 +153,7 @@ export default function Home() {
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-4">
               <span className="text-xl">✦</span> ABOUT US
             </div>
-            <h2 className="text-3xl md:text-4xl text-gray-900 mb-4 leading-tight font-semibold">
+            <h2 className="text-lg md:text-4xl text-gray-900 mb-4 leading-tight font-semibold">
               Sama seperti jodoh, kadang kost <br/> dan hunian idaman bisa kamu &nbsp;
               <span className="text-[#96C8E2]">#CariDiSekitar</span>
             </h2>
@@ -171,7 +171,7 @@ export default function Home() {
              <div className="self-end mb-10">
                 <img src="/images/sparkels.svg" className="h-[52px] object-cover" alt="Interior detail" />
              </div>
-             <p className="text-gray-500 text-lg md:text-xl leading-relaxed text-right max-w-md ml-auto">
+             <p className="text-gray-500 text-md md:text-xl leading-relaxed text-right max-w-md ml-auto">
                Dengan data yang akurat dan filter yang personal, <span className="text-[#96C8E2] font-semibold">Sekitar</span> hadir untuk bantu kamu menemukan kost terbaik yang sesuai dengan kebutuhan mu, di mana pun kamu berada.
              </p>
           </div>
@@ -188,10 +188,10 @@ export default function Home() {
                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-4 text-gray-900">
                  <span className="text-lg">✦</span> HIGHLIGHT
                </div>
-               <h2 className="text-3xl md:text-[48px] lg:text-[48px] font-semibold text-gray-900 mb-6 leading-tight">
+               <h2 className="text-2xl md:text-[48px] lg:text-[48px] font-semibold text-gray-900 mb-6 leading-tight">
                  5 Kost Pilihan Kami
                </h2>
-               <p className="text-gray-500 text-lg mb-10 leading-relaxed">
+               <p className="text-gray-500 text-md md:text-md lg:text-md mb-10 leading-relaxed">
                  Pusing ya pilih kos yang nyaman, aman, dan strategis? <br className="hidden lg:block"/>
                  Tenang, ini dia 5 kost pilihan kami 👉🏻
                </p>
@@ -245,8 +245,8 @@ export default function Home() {
           <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest mb-2">
              <span className="text-xl">✦</span> CARI KOS
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Mulai Cari Kos</h2>
-          <p className="text-gray-500">Kalau biasanya kamu butuh 30 hari untuk cari kost yang sesuai, di Sekitar kamu hanya butuh 30 menit!</p>
+          <h2 className="text-2xl md:text-[48px] lg:text-[48px] font-bold text-gray-900 mb-4">Mulai Cari Kos</h2>
+          <p className="text-gray-500 text-md md:text-md lg:text-md">Kalau biasanya kamu butuh 30 hari untuk cari kost yang sesuai, di Sekitar kamu hanya butuh 30 menit!</p>
         </div>
 
         <SearchFilter />
@@ -311,8 +311,8 @@ export default function Home() {
           <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest mb-2">
              <span className="text-xl">✦</span> BISNIS
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Bisnis Teman Sekitar</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">Kami percaya setiap usaha layak untuk tumbuh. Karena itu, kami bantu #TemanSekitar mempromosikan bisnis kecil/UMKM secara gratis di website ini. 🩵</p>
+          <h2 className="text-2xl md:text-[48px] lg:text-[48px] font-bold text-gray-900 mb-4">Bisnis Teman Sekitar</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto text-md md:text-md lg:text-md">Kami percaya setiap usaha layak untuk tumbuh. Karena itu, kami bantu #TemanSekitar mempromosikan bisnis kecil/UMKM secara gratis di website ini. 🩵</p>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -359,8 +359,8 @@ export default function Home() {
       {/* Testimonial Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 mb-20">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">Apa Kata <span className="text-[#96C8E2]">#TemanSekitar</span></h2>
-          <p className="text-gray-500 mt-4">Setiap pengguna punya cerita. Inilah pengalaman mereka menemukan kost yang tepat bersama Sekitar. 🩵</p>
+          <h2 className="text-2xl md:text-[48px] lg:text-[48px] font-bold text-gray-900">Apa Kata <span className="text-[#96C8E2]">#TemanSekitar</span></h2>
+          <p className="text-gray-500 mt-4 text-md md:text-md lg:text-md">Setiap pengguna punya cerita. Inilah pengalaman mereka menemukan kost yang tepat bersama Sekitar. 🩵</p>
         </div>
 
         <div className="relative bg-gray-50 rounded-3xl flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto">

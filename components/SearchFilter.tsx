@@ -126,7 +126,7 @@ const SearchFilter: React.FC = () => {
 
 
 
-        <button className="bg-gray-900 text-white px-8 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors h-[60px] md:h-auto self-end">
+        <button className="bg-gray-900 text-white px-8 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors h-[40px] md:h-[40px] lg:h-[40px] md:h-auto self-end w-full md:w-auto">
           Cari
         </button>
       </div>

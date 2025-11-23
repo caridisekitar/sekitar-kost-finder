@@ -25,28 +25,28 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="font-semibold text-gray-400 uppercase tracking-wider mb-4">MENU</h3>
                 <ul className="space-y-3">
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Home</a></li>
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Cari Kost</a></li>
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Maps</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Home</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Cari Kost</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Maps</a></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-400 uppercase tracking-wider mb-4 text-transparent">.</h3>
                 <ul className="space-y-3">
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Wishlist</a></li>
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Kalkulator Budget</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Wishlist</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Kalkulator Budget</a></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-400 uppercase tracking-wider mb-4">INFORMATION</h3>
                 <ul className="space-y-3">
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Privacy</a></li>
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Faq</a></li>
-                  <li><a href="#" className="text-gray-900 hover:text-blue-600 font-medium">Contacts</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Privacy</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Faq</a></li>
+                  <li><a href="#" className="text-gray-900 hover:text-blue-600 text-sm">Contacts</a></li>
                 </ul>
               </div>
-              <div className="col-span-2 md:col-span-1 flex flex-col items-start md:items-end">
-                <button className="bg-black text-white px-6 py-2 rounded-xl text-sm font-medium mb-4">Contact Us</button>
+              <div className="col-span-2 md:col-span-1 flex flex-col items-center md:items-end lg:items-end">
+                <button className="bg-black text-white px-6 py-2 rounded-xl text-sm mb-4">Contact Us</button>
                 <a href="mailto:caridisekitar@gmail.com" className="text-sm text-gray-500">caridisekitar@gmail.com</a>
               </div>
             </div>
