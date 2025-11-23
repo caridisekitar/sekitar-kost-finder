@@ -117,7 +117,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-b from-blue-400/30 to-blue-300/10 mix-blend-multiply"></div>
         </div>
         
-        <div className="max-w-5xl mx-auto text-center z-10 relative w-full">
+        <div className="max-w-5xl mx-auto text-center z-10 relative w-full mt-12 md:mt-0 lg:mt-0">
           <h1 className="text-xl md:text-[64px] lg:text-[64px] leading-[30px] md:leading-[76px] lg:leading-[76px] tracking-[-0.8px] text-white drop-shadow-sm">
             Cari kost terasa lebih mudah,
           </h1>
