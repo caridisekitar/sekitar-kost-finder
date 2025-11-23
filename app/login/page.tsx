@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Info } from 'lucide-react';
+import { Info, Phone } from 'lucide-react';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ export default function Login() {
 
   {/* LEFT: LOGIN FORM */}
   <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-md w-full space-y-8 p-8">
+    <div className="max-w-xl w-full space-y-8 p-8">
 
       <div className="">
         <div className="flex cursor-pointer" onClick={() => navigate('/')}>
@@ -41,18 +41,25 @@ export default function Login() {
             >
               Nomor Telepon
             </label>
-            <input
-              id="phone-number"
-              name="phone"
-              type="phone"
-              required
-              className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-xs"
-              placeholder="Masukkan nomor telepon kamu"
-              value={phone}
-            />
+            <div className="flex items-center gap-1 border border-gray-300 rounded-md px-3 py-2 bg-white shadow-sm">
+              <Phone size={20} className="w-6 h-6 text-gray-500"/>
+              
+              <input 
+                id="phone-number"
+                name="phone"
+                type="phone" 
+                placeholder="Masukkan nomor telepon kamu"
+                className="w-full outline-none px-3 py-1 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+            </div>
           </div>
 
         </div>
+        <div className="w-full max-w-xl">
+            
+          </div>
 
         {/* REMEMBER ME + FORGOT */}
         <div className="flex items-center justify-between">

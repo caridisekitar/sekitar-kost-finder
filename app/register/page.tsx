@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Home } from 'lucide-react';
+import { User, Mail, Phone } from 'lucide-react';
 
 export default function Register() {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function Register() {
 
   {/* LEFT: REGISTER FORM */}
   <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-md w-full space-y-8 p-8">
+    <div className="max-w-xl w-full space-y-8 p-8">
 
       {/* Logo + Title */}
       <div className="">
@@ -53,16 +53,20 @@ export default function Register() {
             >
               Nama Lengkap
             </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-xs"
-              placeholder="Masukkan nama lengkap kamu"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
+            <div className="flex items-center gap-1 border border-gray-300 rounded-md px-3 py-2 bg-white shadow-sm">
+              <User size={20} className="w-6 h-6 text-gray-500"/>
+              
+              <input 
+                id="name"
+                name="name"
+                type="text"
+                required
+                placeholder="Masukkan nama lengkap kamu"
+                className="w-full outline-none px-3 py-1 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
           </div>
 
           {/* EMAIL */}
@@ -73,17 +77,21 @@ export default function Register() {
             >
               Email address
             </label>
-            <input
-              id="email-address"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-xs"
-              placeholder="Masukkan e-mail kamu"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+            <div className="flex items-center gap-1 border border-gray-300 rounded-md px-3 py-2 bg-white shadow-sm">
+              <Mail size={20} className="w-6 h-6 text-gray-500"/>
+              
+              <input 
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                placeholder="Masukkan e-mail kamu"
+                className="w-full outline-none px-3 py-1 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
           </div>
 
           {/* PHONE NUMBER */}
@@ -94,16 +102,21 @@ export default function Register() {
             >
               Nomor Telepon
             </label>
-            <input
-              id="phone-number"
-              name="phone"
-              type="phone"
-              required
-              className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-xs"
-              placeholder="Masukkan no telepon kamu yang terhubung ke WhatsApp"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-            />
+            <div className="flex items-center gap-1 border border-gray-300 rounded-md px-3 py-2 bg-white shadow-sm">
+              <Phone size={20} className="w-6 h-6 text-gray-500"/>
+              
+              <input 
+                id="phone-number"
+                name="phone"
+                type="phone"
+                required
+                placeholder="Masukkan no telepon kamu yang terhubung ke WhatsApp"
+                className="w-full outline-none px-3 py-1 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+            </div>
+
           </div>
         </div>
 
