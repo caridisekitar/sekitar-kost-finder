@@ -46,7 +46,7 @@ export default function Login() {
               name="phone"
               type="phone"
               required
-              className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-lg sm:text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              className="appearance-none block w-full px-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-xs"
               placeholder="Masukkan nomor telepon kamu"
               value={phone}
             />
