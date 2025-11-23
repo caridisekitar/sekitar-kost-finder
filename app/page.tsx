@@ -123,8 +123,8 @@ export default function Home() {
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mt-0 md:mt-2 lg:mt-2 text-xl md:text-[64px] lg:text-[64px] leading-[30px] md:leading-[76px] lg:leading-[76px] tracking-[-0.8px] text-white drop-shadow-sm">
             <span>bersama</span>
-            <div className="flex items-center justify-center mt-1 md:mt-2">
-               <img alt="Logo" src="/images/logo-sekitar-icon.png" className="h-10 w-auto md:h-12 md:w-auto ml-2"/>
+            <div className="flex items-end justify-center">
+               <img alt="Logo" src="/images/logo-sekitar-icon.png" className="h-10 w-auto md:h-[72px] md:w-auto"/>
             </div>
             <span>Sekitar.</span>
           </div>
