@@ -120,29 +120,29 @@ export default function Home() {
     </div>
 
     {/* Text Positioned Centered Absolute Inside Background */}
-    <div className="absolute inset-0 flex flex-col items-center text-center px-4 py-16">
-      <h1 className="text-white font-medium text-[32px] leading-[40px] md:text-[64px] md:leading-[76px]">
+    <div className="absolute inset-0 flex flex-col items-center text-center px-4 py-4 md:py-16 lg:py-16">
+      <h1 className="text-white font-medium text-[20px] md:text-[32px] lg:text-[32px] leading-[30px] md:leading-[40px] lg:leading-[40px] md:text-[64px] md:leading-[76px]">
         Cari kost terasa lebih mudah,
-        <br className="hidden md:block" />
+        <br className=" md:block" />
         bersama{' '}
         <img
           alt="Logo"
           src="/images/logo-sekitar-icon.webp"
-          className="inline h-8 md:h-[72px] align-baseline -mb-2 lg:mr-2"
+          className="inline h-8 md:h-[72px] align-baseline -mb-2 mr-1 lg:mr-2"
         />
         Sekitar.
       </h1>
 
       {/* Search Bar */}
-      <div className="mt-6 md:mt-10 w-full max-w-2xl">
-        <div className="bg-white rounded-full shadow-xl flex items-center px-1 py-2 md:py-1 lg:pl-6">
+      <div className="mt-6 md:mt-10 lg:w-full max-w-2xl">
+        <div className="bg-white rounded-full shadow-xl flex items-center px-1 py-2 md:py-1 pl-3 lg:pl-6">
           <Search className="text-gray-400 w-5 h-5 mr-3" />
           <input
             type="text"
             placeholder="Tulis nama kost disini..."
-            className="flex-1 outline-none text-gray-700 placeholder-gray-400 text-base bg-transparent"
+            className="flex-1 outline-none text-gray-700 placeholder-gray-400 text-sm bg-transparent"
           />
-          <button className="bg-[#1A1A1A] text-white px-16 py-2 md:py-3 rounded-full text-sm md:text-base hover:bg-black">
+          <button className="bg-[#1A1A1A] text-white px-8 lg:px-16 py-2 md:py-3 rounded-full text-sm md:text-base hover:bg-black">
             Cari
           </button>
         </div>
@@ -154,30 +154,30 @@ export default function Home() {
 
       {/* About Us Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 md:py-20 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8 lg:gap-12 items-start">
           <div>
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-4">
               <span className="text-xl">✦</span> ABOUT US
             </div>
-            <h2 className="text-sm md:text-4xl text-gray-900 mb-4 leading-tight font-medium">
+            <h2 className=" md:text-4xl text-gray-900 mb-4 leading-tight font-medium">
               Sama seperti jodoh, kadang kost <br className="hidden md:block"/> dan hunian idaman bisa kamu &nbsp;
               <span className="text-[#96C8E2]">#CariDiSekitar</span>
             </h2>
             <div className="flex gap-4 mt-8">
-              <div className="w-14 md:w-48 lg:w-48 h-48 rounded-xl overflow-hidden">
+              <div className="w-24 h-24 md:w-48 md:h-48 rounded-xl overflow-hidden">
                 <img src="/images/about-1.webp" className="w-full md:h-full lg:h-full object-contain md:object-cover lg:object-cover" alt="Building detail" />
               </div>
-              <div className="w-14 md:w-48 lg:w-48 h-48 rounded-xl overflow-hidden">
+              <div className="w-24 h-24 md:w-48 md:h-48 rounded-xl overflow-hidden">
                 <img src="/images/about-2.webp" className="w-full md:h-full lg:h-full object-contain md:object-cover lg:object-cover" alt="Roof detail" />
               </div>
             </div>
           </div>
           
-          <div className="flex flex-col justify-between h-full md:pt-20">
-             <div className="self-end mb-10">
+          <div className="flex flex-col md:justify-between md:h-full md:pt-20 pt-6">
+             <div className="self-end mb-1 lg:mb-10">
                 <img src="/images/sparkels.svg" className="h-[52px] object-cover" alt="Interior detail" />
              </div>
-             <p className="text-gray-500 text-sm md:text-xl leading-relaxed text-right max-w-md ml-auto font-medium">
+             <p className="text-gray-500  md:text-xl lg:text-[24px] lg:leading-[38px] text-right max-w-md ml-auto font-medium">
                Dengan data yang akurat dan filter yang personal, <span className="text-[#96C8E2] font-medium">Sekitar</span> hadir untuk bantu kamu menemukan kost terbaik yang sesuai dengan kebutuhan mu, di mana pun kamu berada.
              </p>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
                <h2 className="text-xl md:text-[48px] lg:text-[48px] font-medium text-gray-900 mb-2 leading-tight">
                  5 Kost Pilihan Kami
                </h2>
-               <p className="text-gray-500 text-sm md:text-md lg:text-md mb-10 leading-relaxed">
+               <p className="text-gray-500  md:text-md lg:text-md mb-10 leading-relaxed">
                  Pusing ya pilih kos yang nyaman, aman, dan strategis? <br className="hidden lg:block"/>
                  Tenang, ini dia 5 kost pilihan kami 👉🏻
                </p>
@@ -257,7 +257,7 @@ export default function Home() {
 
         <SearchFilter />
 
-        <div className="mt-8 mb-12 text-gray-500 text-sm">
+        <div className="mt-8 mb-12 text-gray-500 ">
           Menampilkan 10 dari hasil pencarian
         </div>
 

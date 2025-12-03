@@ -77,9 +77,9 @@ const SearchFilter: React.FC = () => {
               <option value="" disabled>
                 Pilih Tipe
               </option>
-              <option value="jakarta">Jakarta</option>
-              <option value="bandung">Bandung</option>
-              <option value="surabaya">Surabaya</option>
+              <option value="putri">Putri</option>
+              <option value="putra">Putra</option>
+              <option value="campur">Campur</option>
             </select>
 
             {/* Chevron Icon */}
