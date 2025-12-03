@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <div className="text-right">
-               <h2 className="text-[20px] leading-[38px] md:text-[32px] font-bold text-white mb-10">Cari kost terasa lebih mudah,<br/>bersama Sekitar.</h2>
+               <h2 className="text-[20px] lg:leading-[38px] md:text-[32px] font-bold text-white mb-10">Cari kost terasa lebih mudah,<br/>bersama Sekitar.</h2>
             </div>
           </div>
         {/* here */}

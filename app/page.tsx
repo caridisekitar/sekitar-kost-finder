@@ -173,9 +173,9 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="flex flex-col md:justify-between md:h-full md:pt-20 pt-6">
+          <div className="flex flex-col md:justify-between md:h-full md:pt-20 lg:pt-20 pt-1">
              <div className="self-end mb-1 lg:mb-10">
-                <img src="/images/sparkels.svg" className="h-[52px] object-cover" alt="Interior detail" />
+                <img src="/images/sparkels.svg" className="h-[32px] lg:h-[52px] object-cover" alt="Interior detail" />
              </div>
              <p className="text-gray-500  md:text-xl lg:text-[24px] lg:leading-[38px] text-right max-w-md ml-auto font-medium">
                Dengan data yang akurat dan filter yang personal, <span className="text-[#96C8E2] font-medium">Sekitar</span> hadir untuk bantu kamu menemukan kost terbaik yang sesuai dengan kebutuhan mu, di mana pun kamu berada.
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       {/* Search Listings Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-18 lg:py-20 mb-20">
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest mb-2">
              <span className="text-xl">✦</span> CARI KOS
@@ -333,7 +333,7 @@ export default function Home() {
       </section>
 
       {/* Business Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-18 lg:py-20 mb-20">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest mb-2">
              <span className="text-xl">✦</span> BISNIS
@@ -384,7 +384,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 mb-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-18 lg:py-20 mb-20">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-[48px] lg:text-[48px] font-bold text-gray-900">Apa Kata <span className="text-[#96C8E2]">#TemanSekitar</span></h2>
           <p className="text-gray-500 mt-4 text-md md:text-md lg:text-md">Setiap pengguna punya cerita. Inilah pengalaman mereka menemukan kost yang tepat bersama Sekitar. 🩵</p>
@@ -408,7 +408,7 @@ export default function Home() {
              </div>
              <div className="flex-1 text-center md:text-left">
                <span className="text-6xl font-serif text-gray-900 leading-none mb-4 block">“</span>
-               <p className="text-xl md:text-2xl text-gray-800 font-medium mb-6 leading-relaxed min-h-[140px] md:min-h-[168px]">
+               <p className="md:text-2xl text-gray-800 font-medium mb-6 leading-relaxed min-h-[140px] md:min-h-[168px]">
                  {currentTestimonial.quote}
                </p>
                <div>
