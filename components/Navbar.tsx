@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 w-full bg-white z-50 border-b border-gray-100">
+    <nav className="fixed top-0 w-full bg-white z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 md:h-20 lg:h-20 items-center">
           {/* Logo */}
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-500 hover:text-gray-700">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-[#292524] bg-[#DCF4FF] p-2 rounded-full">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>

@@ -9,17 +9,17 @@ import "@/app/globals.css";
 
 const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
-  const isNotFound = children?.type === NotFound;
 
-  const hideHeaderFooter = ['/login', '/register', '/confirm-otp'].includes(location.pathname) || isNotFound;
+  const hideHeader = ['/confirm-otp'].includes(location.pathname);
+  const hideFooter = ['/login', '/register', '/confirm-otp'].includes(location.pathname);
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {!hideHeaderFooter && <Navbar />}
+      {!hideHeader && <Navbar />}
       <main className="flex-grow">
         {children}
       </main>
-      {!hideHeaderFooter && <Footer />}
+      {!hideFooter && <Footer />}
     </div>
   );
 };

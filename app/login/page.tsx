@@ -18,6 +18,12 @@ export default function Login() {
   return (
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 bg-gray-50">
 
+    <div
+    className="md:hidden lg:hidden block bg-cover bg-center"
+    style={{
+      backgroundImage: "url('/images/bg-login.webp')"
+    }}
+  ></div>
   {/* LEFT: LOGIN FORM */}
   <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
     <div className="max-w-xl w-full space-y-8 p-4 md:p-8 lg:p-8">

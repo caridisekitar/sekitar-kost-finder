@@ -3,7 +3,7 @@ import { Search, MapPin, ChevronDown } from 'lucide-react';
 
 const SearchFilter: React.FC = () => {
   return (
-    <div className="bg-blue-50 rounded-xl p-4 md:p-6 w-full max-w-6xl mx-auto">
+    <div className="bg-blue-50 rounded-xl p-4 md:p-6 w-full max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row gap-4">
 
         <div className="flex-1">
