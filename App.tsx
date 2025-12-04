@@ -5,6 +5,7 @@ import Home from './app/page';
 import Login from './app/login/page';
 import Register from './app/register/page';
 import Profile from './app/profile/page';
+import FindKos from './app/cari-kos/page';
 import Calculator from './app/calculator/page';
 import Wishlist from './app/wishlist/page';
 import ConfirmOTP from './app/confirm-otp/page';
@@ -20,7 +21,7 @@ const App: React.FC = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/search" element={<Home />} />
+          <Route path="/cari-kos" element={<FindKos />} />
           <Route path="/maps" element={<Home />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/calculator" element={<Calculator />} />

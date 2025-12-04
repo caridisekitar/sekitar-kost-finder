@@ -8,7 +8,8 @@ export const PROPERTIES: Property[] = [
     price: "Rp1.500.000",
     type: "Putri",
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    isPromoted: true
+    isPromoted: true,
+    isNew: true
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ export const PROPERTIES: Property[] = [
     price: "Rp2.100.000",
     type: "Campur",
     image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    isPromoted: true
+    isPromoted: true,
+    isNew: true
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ export const PROPERTIES: Property[] = [
     price: "Rp1.850.000",
     type: "Putra",
     image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    isPromoted: true
+    isPromoted: true,
+    isNew: true
   },
   {
     id: 4,
@@ -35,7 +38,8 @@ export const PROPERTIES: Property[] = [
     price: "Rp2.500.000",
     type: "Putri",
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    isPromoted: true
+    isPromoted: true,
+    isNew: false
   },
   {
     id: 5,

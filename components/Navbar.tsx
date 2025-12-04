@@ -1,12 +1,16 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image'
+import path from 'path';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const location = useLocation();
+  console.log(location.pathname);
   const navigate = useNavigate();
 
   return (
@@ -23,7 +27,7 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-gray-900 hover:text-blue-500 font-medium text-sm">Home</Link>
-            <Link to="/search" className="text-gray-500 hover:text-blue-500 font-medium text-sm">Cari Kos</Link>
+            <Link to="/cari-kos" className="text-gray-500 hover:text-blue-500 font-medium text-sm">Cari Kos</Link>
             <Link to="/maps" className="text-gray-500 hover:text-blue-500 font-medium text-sm">Maps</Link>
             <Link to="/wishlist" className="text-gray-500 hover:text-blue-500 font-medium text-sm">Wishlist</Link>
             <Link to="/calculator" className="text-gray-500 hover:text-blue-500 font-medium text-sm">Kalkulator Budget</Link>
@@ -53,7 +57,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white border-t border-gray-100">
           <div className="px-4 pt-2 pb-4 space-y-1">
             <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Home</Link>
-            <Link to="/search" className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:bg-gray-50">Cari Kos</Link>
+            <Link to="/cari-kos" className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:bg-gray-50">Cari Kos</Link>
             <Link to="/maps" className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:bg-gray-50">Maps</Link>
             <Link to="/wishlist" className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:bg-gray-50">Wishlist</Link>
             <div className="mt-4 flex flex-col space-y-2">

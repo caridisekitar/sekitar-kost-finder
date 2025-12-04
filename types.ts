@@ -6,6 +6,7 @@ export interface Property {
   type: 'Putri' | 'Putra' | 'Campur';
   image: string;
   isPromoted?: boolean;
+  isNew?: boolean;
 }
 
 export interface Business {
@@ -13,6 +14,7 @@ export interface Business {
   name: string;
   priceRange: string;
   image: string;
+  isNew?: boolean;
 }
 
 export interface Testimonial {
